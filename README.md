@@ -32,7 +32,7 @@ Features
 
 System Architecture :
 
-![Architecture Diagram](images/architecture.png)
+![Architecture Diagram]architecture.png
 
  Circuit Description
 
