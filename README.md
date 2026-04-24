@@ -30,6 +30,10 @@ Features
 * Schottky Diode (SS34)
 * Resistors (for voltage divider and gate control)
 
+System Architecture :
+
+![Architecture Diagram](images/architecture.png)
+
  Circuit Description
 
  1. Solar Voltage Sensing
