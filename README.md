@@ -4,7 +4,7 @@ Solar power bank using STM32 with PWM-based charging, battery monitoring, and bu
 
  Overview
 
-This project implements a **solar-powered battery charging and monitoring system** using an STM32 microcontroller.
+This project implements a solar-powered battery charging and monitoring system** using an STM32 microcontroller.
 
 The system uses an **18V solar panel, a MOSFET-based switching circuit**, and **dual voltage sensing** to control charging and monitor system behavior in real time.
 
@@ -20,19 +20,19 @@ Features
 
 
 
- Components Used
+ Components Used :
 
-* STM32F103C8 (Blue Pill)
-* 18V Solar Panel
-* N-Channel MOSFET (IRLZ44N / AO4407 equivalent)
-* Li-ion Battery (3.7V, 4.2V max)
-* Buck Converter (5V output)
-* Schottky Diode (SS34)
-* Resistors (for voltage divider and gate control)
+  STM32F103C8 (Blue Pill)
+  18V Solar Panel
+  N-Channel MOSFET (IRLZ44N / AO4407 equivalent)
+  Li-ion Battery (3.7V, 4.2V max)
+  Buck Converter (5V output)
+  Schottky Diode (SS34)
+  Resistors (for voltage divider and gate control)
 
 System Architecture :
 
-![Architecture Diagram]architecture.png
+check out architecture.png file
 
  Circuit Description
 
@@ -43,8 +43,8 @@ System Architecture :
 
 2. Battery Voltage Sensing
 
-* Voltage divider reduces battery voltage → safe ADC level
-* Connected to STM32 ADC (PA0)
+ Voltage divider reduces battery voltage → safe ADC level
+  Connected to STM32 ADC (PA0)
 
 3. MOSFET Gate Drive
 
@@ -95,29 +95,28 @@ Voltage = (ADC_value × 3.3) / 4095
 
  PWM Control
 
-* STM32 generates PWM signal
-* Controls MOSFET switching
-* Regulates charging behavior
+ STM32 generates PWM signal
+ Controls MOSFET switching
+ Regulates charging behavior
 
 
 
 
  Battery Logic
-
-* > 4.0V → FULL
-* 3.5V – 4.0V → MEDIUM
-* < 3.5V → LOW
+ > 4.0V → FULL
+ 3.5V – 4.0V → MEDIUM
+ < 3.5V → LOW
 
 
 
 
 Conclusion
 
-This project demonstrates a **practical solar energy system integrated with STM32**, combining:
+This project demonstrates a **practical solar energy system integrated with STM32, combining:
 
-* Power electronics (MOSFET switching)
-* Embedded systems (ADC + PWM)
-* Energy management logic
+  Power electronics (MOSFET switching)
+  Embedded systems (ADC + PWM)
+  Energy management logic
 
-It reflects real-world design considerations for **embedded and renewable energy systems**.
+It reflects real-world design considerations for **embedded and renewable energy systems.
 
